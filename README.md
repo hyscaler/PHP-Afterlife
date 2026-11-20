@@ -99,7 +99,15 @@ This keeps PHP current, not the operating system. A release past end of life no 
 
 Thank you to Ondřej Surý for years of keeping PHP current on Debian and Ubuntu, and for continuing to support and update the releases that are still in support. This project exists only because of that work.
 
-The packaging is the work of Ondřej Surý and the Debian PHP maintainers. This project rebuilds it for releases they no longer target, and is not affiliated with or endorsed by deb.sury.org, Debian, Ubuntu or the PHP project. If Sury's repository has served you well, [consider supporting it](https://deb.sury.org/#donate).
+The packaging is the work of Ondřej Surý and the Debian PHP maintainers. This project rebuilds it for releases they no longer target, and is independent of all of them: see the [disclaimer](#disclaimer). If Sury's repository has served you well, [consider supporting it](https://deb.sury.org/#donate).
+
+## Disclaimer
+
+- **Independent project.** PHP Afterlife is built and published by HyScaler. It is not affiliated with, endorsed by, sponsored by or approved by Ondřej Surý, deb.sury.org, the Debian project, Canonical or Ubuntu, The PHP Group, or the authors of the extensions and libraries it packages.
+- **Not their packages.** These are unofficial rebuilds. They are not produced, reviewed or supported by Sury or by Debian. Please do not report problems with them to deb.sury.org, Debian, Ubuntu or PHP.
+- **Names and trademarks.** PHP, Debian, Ubuntu and the other names used here belong to their respective owners. They appear only to describe what the packages are and where they come from.
+- **No warranty.** The packages are provided as is, without warranty of any kind, and you use them at your own risk. Each package remains under its original licence.
+- **Where to report.** Problems with these packages go to https://github.com/hyscaler/PHP-Afterlife/issues.
 
 ## Problems and questions
 
