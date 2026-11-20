@@ -95,11 +95,9 @@ This keeps PHP current, not the operating system. A release past end of life no 
 - If Sury's packaging comes to need a library the retired release cannot provide, the affected package stops at its last buildable version.
 - Updates follow Sury's, so they arrive here after they appear there.
 
-## Thanks and credits
+## Credits
 
-Thank you to Ondřej Surý for years of keeping PHP current on Debian and Ubuntu, and for continuing to support and update the releases that are still in support. This project exists only because of that work.
-
-The packaging is the work of Ondřej Surý and the Debian PHP maintainers. This project rebuilds it for releases they no longer target, and is independent of all of them: see the [disclaimer](#disclaimer). If Sury's repository has served you well, [consider supporting it](https://deb.sury.org/#donate).
+The packaging is the work of Ondřej Surý and the Debian PHP maintainers, who continue to support and update the releases still in support. This project rebuilds it for releases they no longer target, and is independent of all of them: see the [disclaimer](#disclaimer). If Sury's repository has served you well, [consider supporting it](https://deb.sury.org/#donate).
 
 ## Disclaimer
 
