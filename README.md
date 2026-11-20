@@ -11,6 +11,7 @@ Website: https://phpafterlife.hyscaler.org/
 - **Ready now:** Debian 11 bullseye packages for amd64.
 - **Being built:** arm64 packages for Debian 11 bullseye.
 - **Coming soon:** Ubuntu releases past their end of life.
+- **For early testers:** these builds have not been tested yet. They are built with `nocheck`, which skips the upstream test suites. The tests will be run; until then, try the packages on a test server before production.
 
 ## Is this for you?
 
@@ -90,7 +91,7 @@ Debian releases share one repository and one signing key; the release is chosen 
 
 This keeps PHP current, not the operating system. A release past end of life no longer gets fixes for OpenSSL, glibc, the kernel or anything else PHP runs on. Treat this repository as time to migrate, not a reason to stay.
 
-- The upstream test suites are not run during the build.
+- The upstream test suites have not been run yet: the current builds use the `nocheck` build option, which skips them. They will be run, and this page will say so when they have. Until then the repository is for early testers.
 - If Sury's packaging comes to need a library the retired release cannot provide, the affected package stops at its last buildable version.
 - Updates follow Sury's, so they arrive here after they appear there.
 
