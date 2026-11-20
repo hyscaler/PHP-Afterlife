@@ -6,6 +6,12 @@ When a release reaches end of life, [deb.sury.org](https://deb.sury.org/) stops 
 
 Website: https://phpafterlife.hyscaler.org/
 
+## Status
+
+- **Ready now:** Debian 11 bullseye packages for amd64.
+- **Being built:** arm64 packages for Debian 11 bullseye.
+- **Coming soon:** Ubuntu releases past their end of life.
+
 ## Is this for you?
 
 Only if your release is past its end of life.
@@ -17,7 +23,7 @@ Only if your release is past its end of life.
 
 | Release | PHP branches | Architectures | Repository |
 | --- | --- | --- | --- |
-| Debian 11 bullseye | 8.2, 8.3, 8.4, 8.5, 8.6 | amd64 (arm64 is being built and follows shortly) | `https://phpafterlife.hyscaler.org/debian` |
+| Debian 11 bullseye | 8.2, 8.3, 8.4, 8.5, 8.6 | amd64 is ready, arm64 is being built | `https://phpafterlife.hyscaler.org/debian` |
 
 Further Debian releases, and Ubuntu releases, are added as they pass their end of life. A PHP branch is carried for as long as php.net supports it.
 
