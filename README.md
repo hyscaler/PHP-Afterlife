@@ -17,7 +17,7 @@ Only if your release is past its end of life.
 
 | Release | PHP branches | Architectures | Repository |
 | --- | --- | --- | --- |
-| Debian 11 bullseye | 8.2, 8.3, 8.4, 8.5, 8.6 | amd64, arm64 | `https://phpafterlife.hyscaler.org/bullseye` |
+| Debian 11 bullseye | 8.2, 8.3, 8.4, 8.5, 8.6 | amd64 (arm64 is being built and follows shortly) | `https://phpafterlife.hyscaler.org/debian` |
 
 Further Debian releases, and Ubuntu releases, are added as they pass their end of life. A PHP branch is carried for as long as php.net supports it.
 
@@ -29,7 +29,7 @@ Package names are the same as Sury's (`php8.4-fpm`, `php8.3-redis` and so on) an
 
    ```sh
    sudo curl -fsSL -o /usr/share/keyrings/php-afterlife-archive-keyring.gpg \
-     https://phpafterlife.hyscaler.org/bullseye/php-afterlife-archive-keyring.gpg
+     https://phpafterlife.hyscaler.org/debian/php-afterlife-archive-keyring.gpg
    ```
 
 2. Check that its fingerprint matches the one under [Signing keys](#signing-keys).
@@ -43,7 +43,7 @@ Package names are the same as Sury's (`php8.4-fpm`, `php8.3-redis` and so on) an
 
    ```sh
    echo "deb [signed-by=/usr/share/keyrings/php-afterlife-archive-keyring.gpg] \
-   https://phpafterlife.hyscaler.org/bullseye bullseye main" \
+   https://phpafterlife.hyscaler.org/debian bullseye main" \
      | sudo tee /etc/apt/sources.list.d/php-afterlife.list
    ```
 
@@ -61,11 +61,11 @@ Package names are the same as Sury's (`php8.4-fpm`, `php8.3-redis` and so on) an
 
 ## Signing keys
 
-Each release has its own repository and its own signing key.
+Debian releases share one repository and one signing key; the release is chosen by its name in the `deb` line.
 
 | Release | Keyring | Fingerprint |
 | --- | --- | --- |
-| Debian 11 bullseye | [.gpg](https://phpafterlife.hyscaler.org/bullseye/php-afterlife-archive-keyring.gpg), [.asc](https://phpafterlife.hyscaler.org/bullseye/php-afterlife-archive-keyring.asc) | `3248 8407 A75D 6BBA 09D4 4697 B4FD 9E12 71F1 E7AD` |
+| Debian (all releases) | [.gpg](https://phpafterlife.hyscaler.org/debian/php-afterlife-archive-keyring.gpg), [.asc](https://phpafterlife.hyscaler.org/debian/php-afterlife-archive-keyring.asc) | `3248 8407 A75D 6BBA 09D4 4697 B4FD 9E12 71F1 E7AD` |
 
 ## What is in it
 
