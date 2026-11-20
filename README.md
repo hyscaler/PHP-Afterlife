@@ -66,6 +66,12 @@ Package names are the same as Sury's (`php8.4-fpm`, `php8.3-redis` and so on) an
    sudo apt update && sudo apt upgrade
    ```
 
+   **If apt says PHP packages are "kept back":** you have debug symbol packages from Sury installed (names ending in `-dbgsym`). Each one requires the exact old version of its PHP package, and this repository has no matching debug build, so apt holds back every package that depends on it. Remove them and upgrade again. They are only used to analyse crash dumps.
+
+   ```sh
+   sudo apt remove 'php*-dbgsym' && sudo apt upgrade
+   ```
+
 ## Signing keys
 
 Debian releases share one repository and one signing key; the release is chosen by its name in the `deb` line.
@@ -79,7 +85,7 @@ Debian releases share one repository and one signing key; the release is chosen 
 - The PHP interpreters: CLI, FPM, the Apache module, CGI, embed, phpdbg, and the bundled extensions.
 - The PECL extensions from Sury's repository, such as redis, imagick, xdebug, apcu, memcached, mongodb and swoole.
 - The supporting libraries Sury backports.
-- No debug symbol packages.
+- No debug symbol packages (`-dbgsym`) yet. They are several times the size of everything else and are planned for a later rebuild.
 
 ## How it is built
 
