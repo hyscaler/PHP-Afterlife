@@ -92,6 +92,8 @@ This keeps PHP current, not the operating system. A release past end of life no 
 
 The packaging is the work of Ondřej Surý and the Debian PHP maintainers. This project rebuilds it for releases they no longer target, and is not affiliated with or endorsed by deb.sury.org, Debian, Ubuntu or the PHP project. If Sury's repository has served you well, [consider supporting it](https://deb.sury.org/#donate).
 
-## Contact
+## Problems and questions
 
-Built and signed by HyScaler. Questions and problems: php.afterlife@hyscaler.org
+Open an issue at https://github.com/hyscaler/PHP-Afterlife/issues.
+
+Built and signed by HyScaler.
