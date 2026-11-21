@@ -8,8 +8,7 @@ Website: https://phpafterlife.hyscaler.org/
 
 ## Status
 
-- **Ready now:** Debian 11 bullseye packages for amd64.
-- **Being built:** arm64 packages for Debian 11 bullseye.
+- **Ready now:** Debian 11 bullseye packages for amd64 and arm64.
 - **Coming soon:** Ubuntu releases past their end of life.
 - **For early testers:** these builds have not been tested yet. They are built with `nocheck`, which skips the upstream test suites. The tests will be run; until then, try the packages on a test server before production.
 
@@ -24,7 +23,7 @@ Only if your release is past its end of life.
 
 | Release | PHP branches | Architectures | Repository |
 | --- | --- | --- | --- |
-| Debian 11 bullseye | 8.2, 8.3, 8.4, 8.5, 8.6 | amd64 is ready, arm64 is being built | `https://phpafterlife.hyscaler.org/debian` |
+| Debian 11 bullseye | 8.2, 8.3, 8.4, 8.5, 8.6 | amd64, arm64 | `https://phpafterlife.hyscaler.org/debian` |
 
 Further Debian releases, and Ubuntu releases, are added as they pass their end of life. A PHP branch is carried for as long as php.net supports it.
 
